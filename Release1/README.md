@@ -37,6 +37,7 @@ This establishes the foundation for later releases, where additional sensors, ca
 Install the library if needed:
 
 sudo apt update
+
 sudo apt install sense-hat -y
 
 ---
