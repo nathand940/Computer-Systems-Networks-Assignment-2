@@ -39,9 +39,9 @@ Project Repository
 A GitHub repository will be created to store:
 • 	All source code (sensing, processing, networking, dashboard)
 • 	System architecture and workflow diagrams
+•   All Releases
 • 	Proposal document
 • 	Dashboard assets
 • 	Demo video link
-Repository URL: To be added once created
 
 
