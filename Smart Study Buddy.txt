@@ -1,0 +1,47 @@
+Smart Study Buddy:
+Camera-Assisted Productivity Environment Monitor
+
+Student Name: Nathan Dolan Student ID: 20059337
+
+The Smart Study Buddy is a connected IoT system designed to help students maintain focus and optimise their study environment. It combines SenseHAT environmental sensing, Pi Camera motion and lighting analysis, and local processing on a Raspberry Pi to calculate a real-time Focus Score. This score reflects environmental comfort, user presence, movement patterns, and lighting conditions.
+
+The device performs threshold checks, motion detection, lighting analysis, and event classification ("User left desk", "Low lighting", "Focus streak achieved"). Processed data is transmitted using MQTT for telemetry and HTTP for cloud alerts, and a lightweight application layer (Blynk Web Dashboard) visualises focus streaks, distraction events, and environment quality. The system also integrates with a cloud automation service (IFTTT) to send email notifications when focus drops or conditions become unsuitable. The SenseHAT LED matrix provides immediate device-level feedback.
+
+This project demonstrates a full IoT architecture: Sensors - Processing - Networking - Application - Cloud and integrates concepts from programming, networking, computer systems, data processing, and cloud services.
+
+Tools, Technologies and Equipment
+
+Hardware:
+• 	Raspberry Pi 4
+• 	SenseHAT (temperature, humidity, pressure, IMU)
+• 	Raspberry Pi Camera Module
+
+Software & Programming:
+• 	Python
+• 	OpenCV (basic motion and lighting detection)
+• 	SenseHAT Python library
+• 	Flask or Blynk Web Dashboard
+• 	SQLite (data logging)
+
+Networking & Cloud:
+• 	MQTT and HTTP
+• 	JSON telemetry
+• 	Local Wi-Fi network
+• 	IFTTT Webhooks (email alerts / cloud integration)
+
+Development Tools:
+• 	VS Code 
+• 	Git + GitHub
+• 	OBS Studio / phone camera for demo video
+
+
+Project Repository
+A GitHub repository will be created to store:
+• 	All source code (sensing, processing, networking, dashboard)
+• 	System architecture and workflow diagrams
+• 	Proposal document
+• 	Dashboard assets
+• 	Demo video link
+Repository URL: To be added once created
+
+
