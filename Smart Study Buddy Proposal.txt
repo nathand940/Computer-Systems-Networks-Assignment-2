@@ -12,36 +12,36 @@ This project demonstrates a full IoT architecture: Sensors - Processing - Networ
 Tools, Technologies and Equipment
 
 Hardware:
-• 	Raspberry Pi 4
-• 	SenseHAT (temperature, humidity, pressure, IMU)
-• 	Raspberry Pi Camera Module
+â€¢ 	Raspberry Pi 4
+â€¢ 	SenseHAT (temperature, humidity, pressure, IMU)
+â€¢ 	Raspberry Pi Camera Module
 
 Software & Programming:
-• 	Python
-• 	OpenCV (basic motion and lighting detection)
-• 	SenseHAT Python library
-• 	Flask or Blynk Web Dashboard
-• 	SQLite (data logging)
+â€¢ 	Python
+â€¢ 	OpenCV (basic motion and lighting detection)
+â€¢ 	SenseHAT Python library
+â€¢ 	Flask or Blynk Web Dashboard
+â€¢ 	SQLite (data logging)
 
 Networking & Cloud:
-• 	MQTT and HTTP
-• 	JSON telemetry
-• 	Local Wi-Fi network
-• 	IFTTT Webhooks (email alerts / cloud integration)
+â€¢ 	MQTT and HTTP
+â€¢ 	JSON telemetry
+â€¢ 	Local Wi-Fi network
+â€¢ 	IFTTT Webhooks (email alerts / cloud integration)
 
 Development Tools:
-• 	VS Code 
-• 	Git + GitHub
-• 	OBS Studio / phone camera for demo video
+â€¢ 	VS Code 
+â€¢ 	Git + GitHub
+â€¢ 	OBS Studio / phone camera for demo video
 
 
 Project Repository
 A GitHub repository will be created to store:
-• 	All source code (sensing, processing, networking, dashboard)
-• 	System architecture and workflow diagrams
-• 	Proposal document
-• 	Dashboard assets
-• 	Demo video link
+â€¢ 	All source code (sensing, processing, networking, dashboard)
+â€¢ 	System architecture and workflow diagrams
+â€¢ 	Proposal document
+â€¢ 	Dashboard assets
+â€¢ 	Demo video link
 Repository URL: To be added once created
 
 
