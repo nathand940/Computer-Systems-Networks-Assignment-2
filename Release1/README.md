@@ -36,11 +36,12 @@ This establishes the foundation for later releases, where additional sensors, ca
 
 Install the library if needed:
 
-```bash
 sudo apt update
 sudo apt install sense-hat -y
 
-## **How to Run the Script**
+---
+
+## How to Run the Script
 
 1. 	Navigate to the Release 1 directory:
 
@@ -59,15 +60,15 @@ sudo apt install sense-hat -y
 
     - Press CTRL + C to stop the script.
 
-What This Release Demonstrates:
+## What This Release Demonstrates:
 
-• 	One real input source (SenseHAT temperature sensor)
-• 	Basic one‑way connection (sensor → device output)
-• 	Two programme strands:
-• 	Programming (Python)
-• 	Computer systems/hardware (Raspberry Pi + SenseHAT)
-• 	Minimal communication resources:
-• 	This README
-• 	A short demo video (provided during submission)
+-   One real input source (SenseHAT temperature sensor)
+- 	Basic one‑way connection (sensor → device output)
+- 	Two programme strands:
+    - 	 Programming (Python)
+    -    Computer systems/hardware (Raspberry Pi + SenseHAT)
+-   Minimal communication resources:
+    -  	 This README
+    -  	 A short demo video (provided during submission)
 
 Release 1 forms the foundation for Release 2, where additional functionality such as camera input or networking will be introduced.
