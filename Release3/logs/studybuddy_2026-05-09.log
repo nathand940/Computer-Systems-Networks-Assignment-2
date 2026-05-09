@@ -1,0 +1,32 @@
+2026-05-09 17:42:24,635 - INFO - Logging initialised.
+2026-05-09 17:42:24,636 - INFO - Smart Study Buddy - Release 3 started.
+2026-05-09 17:42:24,636 - INFO - Sense HAT display cleared.
+2026-05-09 17:42:53,239 - INFO - Capturing image to images/image_20260509_174253.jpg
+2026-05-09 17:43:01,027 - INFO - Image captured successfully: images/image_20260509_174253.jpg
+2026-05-09 17:43:01,028 - INFO - Displaying message on Sense HAT: Image captured
+2026-05-09 17:43:13,396 - INFO - Temperature read: 28.0 °C
+2026-05-09 17:43:13,397 - INFO - Displaying message on Sense HAT: Temp: 28.0C
+2026-05-09 17:43:24,849 - INFO - Starting monitoring mode.
+2026-05-09 17:43:24,849 - INFO - Displaying message on Sense HAT: Monitoring
+2026-05-09 17:43:28,682 - INFO - Monitoring cycle 1/5
+2026-05-09 17:43:28,683 - INFO - Capturing image to images/image_20260509_174328.jpg
+2026-05-09 17:43:34,831 - INFO - Image captured successfully: images/image_20260509_174328.jpg
+2026-05-09 17:43:34,832 - INFO - Temperature read: 28.1 °C
+2026-05-09 17:43:34,833 - INFO - Cycle 1: Image=images/image_20260509_174328.jpg, Temp=28.1C
+2026-05-09 17:43:44,833 - INFO - Monitoring cycle 2/5
+2026-05-09 17:43:44,834 - INFO - Capturing image to images/image_20260509_174344.jpg
+2026-05-09 17:43:50,994 - INFO - Image captured successfully: images/image_20260509_174344.jpg
+2026-05-09 17:43:50,995 - INFO - Temperature read: 28.1 °C
+2026-05-09 17:43:50,996 - INFO - Cycle 2: Image=images/image_20260509_174344.jpg, Temp=28.1C
+2026-05-09 17:44:05,808 - INFO - Logging initialised.
+2026-05-09 17:44:05,808 - INFO - Smart Study Buddy - Release 3 started.
+2026-05-09 17:44:05,809 - INFO - Sense HAT display cleared.
+2026-05-09 17:44:08,151 - INFO - Displaying message on Sense HAT: Check logs folder
+2026-05-09 17:47:16,477 - INFO - Logging initialised.
+2026-05-09 17:47:16,477 - INFO - Smart Study Buddy - Release 3 started.
+2026-05-09 17:47:16,478 - INFO - Sense HAT display cleared.
+2026-05-09 17:47:19,322 - INFO - Cleanup complete in 'images'. Files deleted: 0
+2026-05-09 17:47:19,322 - INFO - Cleanup complete in 'logs'. Files deleted: 0
+2026-05-09 17:47:19,322 - INFO - Displaying message on Sense HAT: Cleanup done
+2026-05-09 17:47:27,890 - INFO - Exiting program.
+2026-05-09 17:47:27,893 - INFO - Sense HAT display cleared.
