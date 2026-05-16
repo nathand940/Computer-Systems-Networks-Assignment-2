@@ -19,7 +19,7 @@ Release 4 focuses on robustness, cloud integration, advanced telemetry, and self
 
 ## Key Features (Release 4)
 
-##Cloud Logging:
+## Cloud Logging:
 
 All major system events are published to a dedicated MQTT logs feed:
 
@@ -57,7 +57,7 @@ Runs 5 automated cycles:
 
 All cycles are recorded in both local logs and cloud logs.
 
-## loud Dashboard (Adafruit IO)
+## Cloud Dashboard (Adafruit IO)
 
 The dashboard includes:
 
@@ -70,7 +70,7 @@ The dashboard includes:
 
 This provides a clean, professional UI for remote monitoring.
 
-## ocal Logging System
+## Local Logging System
 
 Daily log files stored in:
 
@@ -157,10 +157,22 @@ HealthCheck: Disk 5123.4MB free
 
 Automatically removes:
 
-• 	Old images
-• 	Old logs
+• Old images
+• Old logs
 
 This prevents storage issues and keeps the system running smoothly.
+
+## Gitignore
+
+A .gitignore file is used to keep the repository clean by preventing unnecessary or sensitive files from being uploaded to GitHub. For this project, it excludes:
+
+• venv/ (virtual environment)
+• __pycache__/ and *.pyc (Python cache files)
+• logs/ (runtime logs)
+• images/ (captured monitoring images)
+
+This ensures that only the actual source code for Release 4 is tracked, keeping the repo secure, lightweight, and easy to review.
+
 
 ## Self‑Learned Technologies (Release 4 Requirement)
 
