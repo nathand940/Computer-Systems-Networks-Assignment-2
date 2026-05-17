@@ -1,5 +1,7 @@
 Student Name: Nathan Dolan
+
 Student Number: 20059337
+
 Project Name: Smart Study Buddy – Release 4
 
 
@@ -8,14 +10,51 @@ An IoT Monitoring System with Cloud Integration, Diagnostics, and Advanced Telem
 ## Overview
 Smart Study Buddy (Release 4) is an enhanced IoT monitoring and diagnostics system built on a Raspberry Pi.
 It integrates:
-• 	Sense HAT temperature sensing
-• 	Raspberry Pi Camera Module
-• 	Secure MQTT communication
-• 	Cloud dashboard (Adafruit IO)
-• 	Local + cloud logging
-• 	Automated file cleanup
-• 	A full Health Check diagnostic system
+
+• Sense HAT temperature sensing
+• Raspberry Pi Camera Module
+• Secure MQTT communication
+• Cloud dashboard (Adafruit IO)
+• Local + cloud logging
+• Automated file cleanup
+• A full Health Check diagnostic system
+
 Release 4 focuses on robustness, cloud integration, advanced telemetry, and self‑acquired features beyond the module requirements.
+
+## System Requirements
+
+To run the Smart Study Buddy Release 4 system, you need:
+
+• Raspberry Pi (Model 3B, 4B, or Zero 2 W recommended)
+• Raspberry Pi OS (Bookworm)
+• Python 3.11+
+• Sense HAT (or Sense HAT emulator for testing)
+• Raspberry Pi Camera Module (or compatible USB camera)
+• Internet connection (required for MQTT + Adafruit IO)
+• Adafruit IO account (for cloud dashboard and feeds)
+• MQTT over TLS support (built into Python’s  module)
+
+These requirements ensure the system can capture images, read sensor data, publish to the cloud, and run all Release 4 features reliably.
+
+## How to Install Dependencies
+
+This project uses a Python virtual environment to keep dependencies isolated and consistent.
+
+1. Create the virtual environment:
+        python3 -m venv venv
+   
+2. Activate it:
+        source venv/bin/activate
+   
+3. Install required Python packages:
+        pip install paho-mqtt
+        pip install pillow
+        pip install sense-hat
+   
+4. Run the program:
+        python3 main.py
+
+Using a virtual environment ensures the project runs the same way on any machine and avoids conflicts with system‑wide Python packages
 
 ## Key Features (Release 4)
 
@@ -173,7 +212,6 @@ A .gitignore file is used to keep the repository clean by preventing unnecessary
 
 This ensures that only the actual source code for Release 4 is tracked, keeping the repo secure, lightweight, and easy to review.
 
-
 ## Self‑Learned Technologies (Release 4 Requirement)
 
 This project includes several features beyond module basics:
@@ -210,6 +248,93 @@ Future Enhancements:
 • Email/SMS alerts
 • Long‑term data storage (Azure, Firebase)
 • Containerised deployment (Docker)
+
+## Troubleshooting
+
+This section lists common issues you may encounter when running the Smart Study Buddy system and how to resolve them.
+
+1. MQTT Not Connecting
+ 
+Symptoms:
+• 	“Failed to connect to MQTT broker”
+• 	Dashboard not updating
+
+Fixes:
+• 	Check your Adafruit IO username and key in 
+• 	Ensure your device has internet access
+• 	Confirm port 8883 is used (TLS required)
+• 	Make sure the virtual environment is activated before running
+
+2. Camera Not Capturing Images
+
+Symptoms:
+• 	Blank images
+• 	“Camera error” in Health Check
+• 	No new files in
+
+Fixes:
+• 	Ensure the Raspberry Pi Camera is enabled in raspi-config
+• 	Check that the camera ribbon cable is fully seated
+• 	Test manually:
+           rpicam-still -o test.jpg
+
+3. Sense HAT Not Reading Temperature
+
+Symptoms:
+• 	Temperature always 0
+• 	“Temperature sensor error” in Health Check
+
+Fixes:
+• 	Ensure the Sense HAT is firmly attached
+• 	Install the library inside the venv:
+           pip install sense-hat
+• 	Reboot the Pi to reload I2C drivers
+
+4. Logs Not Being Created
+
+Symptoms:
+• 	No files in logs/
+• 	Logging output missing
+
+Fixes:
+• 	Ensure the logs/ folder exists
+• 	Check file permissions
+• 	Verify the logging path in logging_module.py
+
+5. Cleanup Not Removing Files
+
+Symptoms:
+• 	Old images remain in the folder
+• 	“0 files removed” message
+
+Fixes:
+• 	Check the  value in the cleanup function
+• 	Ensure file timestamps are correct
+• 	Confirm the script has permission to delete files
+
+6. Virtual Environment Issues
+
+Symptoms:
+• 	“Module not found” errors
+• 	MQTT or Sense HAT imports failing
+
+Fixes:
+• Activate the venv before running the program:
+         source venv/bin/activate
+• Reinstall dependencies if needed:
+         pip install paho-mqtt pillow sense-hat
+
+7. Dashboard Not Updating
+
+Symptoms:
+• 	Feeds not changing
+• 	No new entries in Adafruit IO
+
+Fixes:
+• 	Check MQTT connection status
+• 	Ensure feed names in mqtt_module.py match your dashboard
+• 	Refresh the dashboard page
+• 	Verify your Adafruit IO key is correct
 
 ## Conclusion
 
@@ -345,3 +470,7 @@ Reference: https://docs.python.org/3/library/logging.handlers.html
 Code: logging.FileHandler(log_filename)
 Reference: https://docs.python.org/3/library/logging.handlers.html#filehandler
 
+# Creating Virtual Enviornment
+
+Code: python3 -m venv venv/source venv/bin/activate
+Reference: https://docs.python.org/3/library/venv.html
